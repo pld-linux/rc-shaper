@@ -9,7 +9,7 @@ Source0:	http://dl.sourceforge.net/rc-shaper/%{name}-%{version}.tar.gz
 Patch0:		%{name}-conf.patch
 URL:		http://rc-shaper.sf.net/
 Requires:	iproute2
-BuildArch:	noarch
+ExclusiveArch:  %{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
