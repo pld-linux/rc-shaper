@@ -1,8 +1,9 @@
 Summary:	Shaper super-script
+Summary(pl):	Shaper super-script - skrypt do konfiguracji ograniczania pasma
 Name:		rc-shaper
 Version:	1.10
 Release:	0.1
-License:	GPL
+License:	GPL script with binaries under unknown license
 Group:		Networking/Admin
 Source0:	http://dl.sourceforge.net/rc-shaper/%{name}-%{version}.tar.gz
 # Source0-md5:	840926444558967b8498eb84bf829bd4
@@ -18,6 +19,12 @@ Shaper Super-Script is a bash script that uses iproute2 and shapecfg
 It also has an option for supporting more than 100 shapers via a
 kernel patch.
 
+%description -l pl
+Shaper Super-Script to skrypt basha u¿ywaj±cy narzêdzi iproute2 i
+shapecfg (shaper.o) do ograniczania ruchu przychodz±cego i
+wychodz±cego na linuksowym routerze. Ma tak¿e mo¿liwo¶æ obs³ugi wiêcej
+ni¿ 100 shaperów poprzez ³atê j±dra.
+
 %prep
 %setup -q
 %patch0 -p1
@@ -26,11 +33,11 @@ kernel patch.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_sbindir},/etc/rc-shaper,/etc/rc.d/init.d}
 
-install shapecfg-libc6 			$RPM_BUILD_ROOT%{_sbindir}
-install shapecfg-uClib 			$RPM_BUILD_ROOT%{_sbindir}
+install shapecfg-libc6	$RPM_BUILD_ROOT%{_sbindir}
+install shapecfg-uClib	$RPM_BUILD_ROOT%{_sbindir}
 
-install rc.shape 			$RPM_BUILD_ROOT/etc/rc.d/init.d/%{name}
-install shape.conf 			$RPM_BUILD_ROOT%{_sysconfdir}/%{name}/shape.conf
+install rc.shape	$RPM_BUILD_ROOT/etc/rc.d/init.d/%{name}
+install shape.conf	$RPM_BUILD_ROOT%{_sysconfdir}/%{name}/shape.conf
 
 %clean
 rm -rf $RPM_BUILD_ROOT
