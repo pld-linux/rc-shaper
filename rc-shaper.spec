@@ -40,4 +40,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc CHANGELOG README
 %attr(755,root,root) %{_sbindir}/*
 %attr(754,root,root) /etc/rc.d/init.d/%{name}
+%dir %{_sysconfdir}/%{name}
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}/shape.conf
