@@ -1,0 +1,11 @@
+diff -ur rc-shaper-1.10/rc.shape rc-shaper-1.10.new/rc.shape
+--- rc-shaper-1.10/rc.shape	2004-12-23 20:15:42.000000000 +0000
++++ rc-shaper-1.10.new/rc.shape	2005-02-22 11:40:13.357834864 +0000
+@@ -1,6 +1,6 @@
+ #!/bin/bash
+ RCDLINKS="2,S41 3,S41 6,K41"
+-shapedir=/root/shaper
++shapedir=/etc/rc-shaper
+ 
+ if [ ! -f /${shapedir}/shape.conf ]; then
+  echo "Can't find /$shapedir/shape.conf."
