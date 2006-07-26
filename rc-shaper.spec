@@ -8,7 +8,7 @@ Group:		Networking/Admin
 Source0:	http://dl.sourceforge.net/rc-shaper/%{name}-%{version}.tar.gz
 # Source0-md5:	840926444558967b8498eb84bf829bd4
 Patch0:		%{name}-conf.patch
-URL:		http://rc-shaper.sf.net/
+URL:		http://rc-shaper.sourceforge.net/
 Requires:	iproute2
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
