@@ -1,5 +1,5 @@
 Summary:	Shaper super-script
-Summary(pl):	Shaper super-script - skrypt do konfiguracji ograniczania pasma
+Summary(pl.UTF-8):   Shaper super-script - skrypt do konfiguracji ograniczania pasma
 Name:		rc-shaper
 Version:	1.10
 Release:	0.1
@@ -19,11 +19,11 @@ Shaper Super-Script is a bash script that uses iproute2 and shapecfg
 It also has an option for supporting more than 100 shapers via a
 kernel patch.
 
-%description -l pl
-Shaper Super-Script to skrypt basha u¿ywaj±cy narzêdzi iproute2 i
-shapecfg (shaper.o) do ograniczania ruchu przychodz±cego i
-wychodz±cego na linuksowym routerze. Ma tak¿e mo¿liwo¶æ obs³ugi wiêcej
-ni¿ 100 shaperów poprzez ³atê j±dra.
+%description -l pl.UTF-8
+Shaper Super-Script to skrypt basha uÅ¼ywajÄ…cy narzÄ™dzi iproute2 i
+shapecfg (shaper.o) do ograniczania ruchu przychodzÄ…cego i
+wychodzÄ…cego na linuksowym routerze. Ma takÅ¼e moÅ¼liwoÅ›Ä‡ obsÅ‚ugi wiÄ™cej
+niÅ¼ 100 shaperÃ³w poprzez Å‚atÄ™ jÄ…dra.
 
 %prep
 %setup -q
