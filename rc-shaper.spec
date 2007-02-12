@@ -1,5 +1,5 @@
 Summary:	Shaper super-script
-Summary(pl.UTF-8):   Shaper super-script - skrypt do konfiguracji ograniczania pasma
+Summary(pl.UTF-8):	Shaper super-script - skrypt do konfiguracji ograniczania pasma
 Name:		rc-shaper
 Version:	1.10
 Release:	0.1
